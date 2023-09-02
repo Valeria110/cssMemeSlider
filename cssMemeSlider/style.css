@@ -5,10 +5,12 @@ body{
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
 }
 
 .slider{
-    width: 800px;
+    width: 600px;
     height: 690px;
     padding: 10px;
     margin: 10px;
@@ -94,6 +96,7 @@ body{
     width: 7px;
     height: 7px;
     border: 4px solid #40D3DC;
+    background: #40D3DC;
     padding: 5px;
     border-radius: 50%;
     transition: 1s;
@@ -101,11 +104,13 @@ body{
 
 .label:hover .auto-btn{
     cursor: pointer;
-    background-color: rgb(49, 214, 217);
+    background-color: #fff;
+    border: 4px solid #fff;
 }
 
 .label:active .auto-btn{
-    background-color: rgba(64, 211, 220, 0.5);
+    background-color: #000;
+    border: 4px solid #fff;
 }
 
 #radio1:checked ~ .under-photo-content .navigation-auto .label .auto-btn1{
@@ -123,6 +128,13 @@ body{
 #radio4:checked ~ .under-photo-content .navigation-auto .label .auto-btn4{
     background: #000;
     border: 4px solid #40D3DC;
+}
+
+#radio1:checked ~ .under-photo-content .navigation-auto .label .auto-btn1:hover,
+#radio2:checked ~ .under-photo-content .navigation-auto .label .auto-btn2:hover,
+#radio3:checked ~ .under-photo-content .navigation-auto .label .auto-btn3:hover,
+#radio4:checked ~ .under-photo-content .navigation-auto .label .auto-btn4:hover{
+    border: 4px solid #fff;
 }
 
 
@@ -150,7 +162,12 @@ body{
 @media(max-width: 768px) {
     .slider{
         height: 70%;
-        width: 100%;
+        width: 80%;
+        gap: 5px;
+    }
+    .slide img{
+        height: 100%;
+        max-height: 540px;
     }
     .under-photo-content{
         flex-direction: column;
@@ -164,5 +181,14 @@ body{
     .navigation-auto{
         align-self: center;
         order: -1;
+    }
+}
+
+@media(max-width: 670px) {
+    .slider{
+        width: 90%;
+    }
+    .slide img{
+        max-height: 490px;
     }
 }

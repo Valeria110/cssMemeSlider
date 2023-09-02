@@ -1,2 +1,2 @@
 # cssMemeSlider
-[**Ссылка на мой проект**](https://Valeria110.github.io/cssMemeSlider/cssMemeSlider/index.html)
+[**Ссылка на cssMemeSlider**](https://Valeria110.github.io/cssMemeSlider/cssMemeSlider/index.html)

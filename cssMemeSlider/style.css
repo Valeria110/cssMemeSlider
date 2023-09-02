@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,9 +10,11 @@ body{
 
 .slider{
     width: 800px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-top: 20px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -35,8 +37,9 @@ body{
 }
 
 .slide img{
-    height: auto;
+    height: 600px;
     width: 100%;
+    object-fit: contain;
 }
 
 #radio1:checked ~ .slides{
@@ -81,6 +84,7 @@ body{
 
 .auto-btn:hover{
     cursor: pointer;
+    background-color: rgba(49, 214, 217, 0.3);
 }
 
 #radio1:checked ~ .under-photo-content .navigation-auto .label .auto-btn1{

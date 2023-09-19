@@ -29,7 +29,7 @@ body{
 .slides{
     width: 400%;
     display: flex;
-    gap: 0,9375rem;
+    gap: 0.9375rem;
     transition: 0.3s;
 }
 
